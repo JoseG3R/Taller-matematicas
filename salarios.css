@@ -1,0 +1,141 @@
+:root{
+    --gris: rgb(182, 204, 214);
+    --blanco: white;
+    --azul: rgb(79, 158, 185);
+    --azulOscuro: rgb(52, 107, 126);
+    --font: 1.8rem;
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: var(--gris);
+}
+
+.inactive{
+    display: none;
+}
+.bold{
+    font-weight: bold;
+}
+
+main{
+    margin: 1rem 2rem;
+    background-color: var(--blanco) ;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .title{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2rem;
+    margin: 0;
+}
+
+main .form{
+    margin: 2rem 1rem;
+    font-size: 1.5rem;
+}
+
+.form label{
+    display: block;
+    margin-left: auto;
+    padding-bottom: 2px;
+    font-weight: 600;
+    color: black;
+}
+
+main .input-container{
+    margin: .5rem 0;
+    border: 1px solid lightgray ;
+    border-radius: 3px;
+    padding: 4px;
+}
+main #encontrarPersona{
+    width: 100%;
+
+    display: block;
+    justify-content: center;
+    outline: none;
+    border: none;
+}
+
+.form .btnBuscar{
+    margin: .5rem 0;
+    width: 100%;
+    border: none;
+    border-radius: 2px;
+    padding: 6px 10px;
+    background-color:var(--azul) ;
+    color: var(--blanco);
+} 
+
+.form .btnBuscar:hover{
+    background-color: var(--azulOscuro);
+}
+
+.form #selectPerson{
+    width: 100%;
+    border: 1px solid lightgray;
+    outline: none;
+    margin-top: 1rem;
+    border-radius: 3px;
+    padding: 4px;
+
+}
+
+.result-container{
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1rem;
+    margin-top: 0;
+}
+.result-container h3{
+    margin-top: 0;
+}
+
+@media (min-width:641px) {
+    main{
+        margin: 3rem 5rem;
+    }
+    main .form{
+        margin: 4rem;
+        margin-bottom: 2rem;
+    }
+    main .title{
+        margin-top: 1rem;
+    }
+}
+
+
+@media (min-width:769px) {
+    
+    
+    main {
+        margin: 6rem 28rem;
+    }
+    main .title{
+        margin-bottom: 1rem;
+    }
+    main .form{
+        margin-top: 1rem;
+    }
+    main .inputBtnContainer{
+        display: flex;
+    }
+    main .input-container{
+        display: inline-block;
+        width: 70%;
+    }
+    main .form .btnBuscar{
+        display: inline-block;
+        width: 30%;
+        margin-left: 1rem;
+    }
+}
