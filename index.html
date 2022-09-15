@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller de Matemáticas con JavaScript</title>
+    <link rel="stylesheet" href="./salarios.css">
 </head>
+
 <body>
-    <h1>Taller de Matmáticas con JavaScript</h1>
+    <!-- <h1>Taller de Matmáticas con JavaScript</h1>
     <p>
-        Aprende a trabajar con matmáticas usando código JavaScript en 
-        <a href="https://platzi.com/jsmath">platzi.com/jsmath</a>.
-    </p>
+        Por favor, abre la consola del inspector de elementos
+    </p> -->
+    <main>
+        <h2 class="title">Análisis salarial</h2>
+        
+        <div class="form">
+            <label for="encontrarPersona">Buscar personal</label>
+            <div class="inputBtnContainer">
+                <div class="input-container">
+                    <input id="encontrarPersona" value="" type="text" placeholder="Escribe la persona a buscar">
+                </div>
+                <button class="btnBuscar" >Buscar</button>
+            </div>
+            <label for="selectPerson">Seleccionar personal</label>
+            <select name="selectPerson" id="selectPerson">
+                <option value="Seleccionar Persona">Seleccionar Persona</option>
+            </select>
+        </div>
+        <div class="result-container">
+        </div>
 
-    <ul>
-        <li>
-            <a href="./math.html">Fórmulas básicas</a>
-        </li>
-        <li>
-            <a href="./descuentos.html">Procentajes y descuentos</a>
-        </li>
-        <li>
-            <a href="./platzimath.html">Estadística básica</a>
-        </li>
-        <li>
-            <a href="./salarios.html">Análisis salarial</a>
-        </li>
-    </ul>
 
-    <script src="./main.js"></script>
+    </main>
+
+    <script src="./platzimath.js"></script>
+    <script src="./salarios.js"></script>
+    <script src="./analisis.js"></script>
+    <script src="./reto.js"></script>
 </body>
+
 </html>
